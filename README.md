@@ -1,8 +1,6 @@
 # ansible-ruby
 
 
-This is done by Daniel Miao
-
 An Ansible role for installing the Ruby programming language.
 
 ## Role Variables
