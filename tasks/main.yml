@@ -1,6 +1,7 @@
 ---
 - name: Configure the Brightbox APT repository
   apt_repository: repo="ppa:brightbox/ruby-ng" state=present
+  ignore_errors: True
 
 - name: Install Ruby
   apt: pkg=ruby{{ ruby_version }} state=present
