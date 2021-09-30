@@ -5,7 +5,9 @@
 
 - name: Install Ruby
   apt: pkg=ruby{{ ruby_version }} state=present
+  ignore_errors: True
 
 - name: Install Ruby development packages
   apt: pkg=ruby{{ ruby_version }}-dev state=present
   when: ruby_development | bool
+  ignore_errors: True
